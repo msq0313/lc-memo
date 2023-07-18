@@ -1,4 +1,4 @@
-package code1024;
+package array.code1024;
 
 import org.junit.Assert;
 

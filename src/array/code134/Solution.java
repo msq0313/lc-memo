@@ -1,4 +1,4 @@
-package code134;
+package array.code134;
 
 public class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
