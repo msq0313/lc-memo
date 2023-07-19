@@ -1,6 +1,6 @@
-package binary.code226;
+package binaryTree.code226;
 
-import binary.TreeNode;
+import binaryTree.TreeNode;
 
 class Solution {
     // 翻转

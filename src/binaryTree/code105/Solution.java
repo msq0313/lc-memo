@@ -1,6 +1,6 @@
-package binary.code105;
+package binaryTree.code105;
 
-import binary.TreeNode;
+import binaryTree.TreeNode;
 
 import java.util.HashMap;
 

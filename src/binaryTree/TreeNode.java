@@ -1,4 +1,4 @@
-package binary;
+package binaryTree;
 
 public class TreeNode {
     public int val;

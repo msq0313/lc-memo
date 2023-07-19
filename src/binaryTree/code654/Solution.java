@@ -1,6 +1,6 @@
-package binary.code654;
+package binaryTree.code654;
 
-import binary.TreeNode;
+import binaryTree.TreeNode;
 
 import java.util.Arrays;
 

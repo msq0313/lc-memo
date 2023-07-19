@@ -1,6 +1,6 @@
-package binary.code114;
+package binaryTree.code114;
 
-import binary.TreeNode;
+import binaryTree.TreeNode;
 
 public class Solution {
     public void flatten(TreeNode root) {

@@ -1,6 +1,6 @@
-package binary.traversal;
+package binaryTree.traversal;
 
-import binary.TreeNode;
+import binaryTree.TreeNode;
 
 import java.util.Stack;
 

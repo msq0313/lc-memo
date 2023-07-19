@@ -1,6 +1,6 @@
-package binary.code98;
+package binaryTree.code98;
 
-import binary.TreeNode;
+import binaryTree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Stack;
