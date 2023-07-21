@@ -27,10 +27,9 @@ public class Solution {
             while (j > lo && nums[j] > pivot) {
                 j--;
             }
-            if (i >= j) {
-                break;
+            if (i < j) {
+                swap(nums, i, j);
             }
-            swap(nums, i, j);
         }
         swap(nums, lo, j);
         return j;
