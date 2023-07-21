@@ -1,6 +1,7 @@
 package linkedList.code206;
 
 public class Solution {
+    // reverse linked list
     public ListNode reverseList(ListNode head) {
         if (head == null) {
             return null;
