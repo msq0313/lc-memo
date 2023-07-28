@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Solution {
     /**
-     * two sum 两数之和 有序数组
+     * two sum 两数之和 无序数组
      * @param nums
      * @param target
      * @return
