@@ -1,7 +1,7 @@
 package special.code204;
 
 public class Solution {
-    // common
+    // common O(n√n)
     public int countPrimes(int n) {
         int res = 0;
         for (int i = 2; i < n; i++) {
@@ -21,7 +21,7 @@ public class Solution {
         return true;
     }
 
-    // eratosthenes
+    // eratosthenes 时间复杂度为：O(n√n / logn) 接近于 O(n)
     public int countPrimes2(int n) {
         boolean[] notPrime = new boolean[n];
         int res = 0;
@@ -29,7 +29,8 @@ public class Solution {
             if (!notPrime[i]) {
                 res++;
                 if (i <= Math.sqrt(n)) {
-                    for (int j = i * 2; j < n; j+=i) {
+                    // 减少重复，从i * i开始
+                    for (int j = i * i; j < n; j += i) {
                         notPrime[j] = true;
                     }
                 }

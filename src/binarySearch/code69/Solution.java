@@ -60,7 +60,7 @@ public class Solution {
         while (true) {
             long value = (long) x1 * x1;
             long value2 = (long) (x1 + 1) * (x1 + 1);
-            if (value == x || ((value < x) && value2 > x)) {
+            if (value == x || (value < x && value2 > x)) {
                 return x1;
             } else {
                 x1 = (x1 + x / x1) / 2;
