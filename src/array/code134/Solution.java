@@ -1,17 +1,33 @@
 package array.code134;
 
 public class Solution {
+    // code134 Gas Station
+    // 贪心
     public int canCompleteCircuit(int[] gas, int[] cost) {
-
-        int res = 0;
-
-        return res;
+        if (gas.length == 0 || cost.length == 0) {
+            return -1;
+        }
+        int sumGas = 0;
+        int sumCost = 0;
+        for (int i = 0; i < gas.length; i++) {
+            sumGas += gas[i];
+            sumCost += cost[i];
+        }
+        if (sumCost > sumGas) {
+            return -1;
+        }
+        int tank = 0;
+        int start = 0;
+        for (int i = 0; i < gas.length; i++) {
+            tank = tank + gas[i] - cost[i];
+            if (tank < 0) {
+                start = i + 1;
+                tank = 0;
+            }
+        }
+        if (start == gas.length) {
+            start = 0;
+        }
+        return start;
     }
-
-    public static void main(String[] args) {
-        int[] gas = new int[]{1, 2, 3, 4, 5};
-        int[] cost = new int[]{3, 4, 5, 1, 2};
-        System.out.println(new Solution().canCompleteCircuit(gas, cost));
-    }
-
 }
